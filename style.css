@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+section
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.container
+{
+	position: relative;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 40px 0;
+}
+.container .card
+{
+	position: relative;
+	width: 800px;
+	height: fit-content;
+	background: #E8EAED;
+	margin: 20px;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+	border-radius: 15px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	backdrop-filter: blur(10px);
+	align-content: flex-start;
+}
+.container .card .content
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	opacity: 1;
+	transition: 0.5s;
+	padding: 20px;
+}
+.container .card .content .imgbx
+{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 2px solid rgba(0,0,0,0.25)
+}
+.container .card .content .imgbx img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.container .card .content .contentbx h3
+{
+	color: #141518;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 600;
+	font-size: 18px;
+	text-align: center;
+	margin: 10px 0 10px;
+	line-height: 1.1em;
+	width: max-content;
+}
+.container .card .content .contentbx h3 span
+{
+	font-size: 12px;
+	font-weight: 300;
+	text-transform: initial;
+}
+.container .card .content .bio-content
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	opacity: 1;
+	transition: 0.5s;
+	padding: 0px;
+}
+.container .card .sci
+{
+	position: inherit;
+	bottom: 0px;
+	display: flex;
+	align-self: flex-start;
+}
+.container .card .sci li
+{
+	list-style: none;
+	margin: 0 10px;
+	ttransform: translateY(40px);
+	transition: 0.5s;
+	opacity: 1;
+	transition-delay: calc(0.1s * var(--i));
+}
+.container .card .sci:hover li
+{
+	ttransform: translateY(20px);
+	opacity: 1;
+}
+.container .card .sci:hover li a
+{
+	color: #609BEB;
+	ffont-size: 46px;
+}
+.container .card .sci li a
+{
+	color: #141518;
+	font-size: 40px;
+}
